@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+  Interactive Chat Application
+  
+  This simple chat app demonstrates how to build a conversational interface without any external libraries. It uses plain HTML, CSS and JavaScript to let a user send messages and receive basic automated replies. The design is responsive and accessible, making it easy to use on desktops, tablets and phones.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Chat App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="chat-container">
+      <section id="chat-window" class="chat-window" aria-live="polite" aria-label="Chat messages">
+        <!-- Messages will be injected here by chat.js -->
+      </section>
+      <form id="chat-form" class="chat-form" autocomplete="off">
+        <label for="user-input" class="sr-only">Message</label>
+        <input
+          type="text"
+          id="user-input"
+          class="chat-input"
+          placeholder="Type your message…"
+          aria-label="Message input"
+        />
+        <button type="submit" class="send-button">Send</button>
+      </form>
+    </main>
+    <script src="chat.js"></script>
+  </body>
+</html>
